@@ -1,5 +1,9 @@
-text1
-text2
-text3
-text4
-text5
+Project content
+Introduction
+Background and history
+Why we need Google file system?
+Technology background
+Design Structure, Benefits, and Components
+Code demo
+Current Usage and The Transition to Colossus
+Conclusion 
