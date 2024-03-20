@@ -92,12 +92,6 @@ example.txt_chunk_2: text3
 example.txt_chunk_3: text4
 example.txt_chunk_4: text5
 ```
-
-### Pros:
-The sample text can be divided into chunks and distributed across multiple servers, which reflecting GFS's ability to manage large datasets efficiently.
-
-The demo code shows the basic principle of horizontal scaling, where adding more servers can increase storage capacity.
-
 ## Example 2: File and Chunk Storage with Replication
 This example introduces a replication_factor to replicate chunks across multiple servers, enhancing fault tolerance.
 
@@ -179,7 +173,7 @@ if __name__ == "__main__":
 
 ```
 ### Results and Dataset
-The output shows where each chunk is stored and replicated, and the contents of each chunk as  retrieved from the first server.   Also, the output shows that each chunk is stored on two different servers.
+The output shows where each chunk is stored and replicated, and the contents of each chunk as  retrieved from the first server. Also, the output shows that each chunk is stored on two different servers.
 
 Output:
 ```{output2}
@@ -204,9 +198,3 @@ Data from server 1 for example.txt_chunk_3: text4
 Data from server 0 for example.txt_chunk_4: text5
 Data from server 1 for example.txt_chunk_4: text5
 ```
-### Pros:
-This example add replication for the code, which ensuring that data is copied across multiple server to prevent data loss or server faliures.
-## Cons for GFS:
-These two examples didn't show cons for Google File System. Here are some cons for GFS list:
-
-GFS is optimized for large files, which leads to inefficiencies when managing a large number of small files.
