@@ -86,11 +86,19 @@ Chunk example.txt_chunk_1 stored on server 1
 Chunk example.txt_chunk_2 stored on server 2
 Chunk example.txt_chunk_3 stored on server 0
 Chunk example.txt_chunk_4 stored on server 1
-example.txt_chunk_0: text1
-example.txt_chunk_1: text2
-example.txt_chunk_2: text3
-example.txt_chunk_3: text4
-example.txt_chunk_4: text5
+Chunk example.txt_chunk_5 stored on server 2
+Chunk example.txt_chunk_6 stored on server 0
+Chunk example.txt_chunk_7 stored on server 1
+Chunk example.txt_chunk_8 stored on server 2
+example.txt_chunk_0: Project content
+example.txt_chunk_1: Introduction
+example.txt_chunk_2: Background and history
+example.txt_chunk_3: Why we need Google file system?
+example.txt_chunk_4: Technology background
+example.txt_chunk_5: Design Structure, Benefits, and Components
+example.txt_chunk_6: Code demo
+example.txt_chunk_7: Current Usage and The Transition to Colossus
+example.txt_chunk_8: Conclusion 
 ```
 ## Example 2: File and Chunk Storage with Replication
 This example introduces a replication_factor to replicate chunks across multiple servers, enhancing fault tolerance.
@@ -173,7 +181,7 @@ if __name__ == "__main__":
 
 ```
 ### Results and Dataset
-The output shows where each chunk is stored and replicated, and the contents of each chunk as  retrieved from the first server. Also, the output shows that each chunk is stored on two different servers.
+The output shows where each chunk is stored and replicated, and the contents of each chunk as retrieved from the first server. Also, the output shows that each chunk is stored on two different servers.
 
 Output:
 ```{output2}
@@ -187,14 +195,30 @@ Chunk example.txt_chunk_3 stored on server 0
 Chunk example.txt_chunk_3 stored on server 1
 Chunk example.txt_chunk_4 stored on server 0
 Chunk example.txt_chunk_4 stored on server 1
-Data from server 0 for example.txt_chunk_0: text1
-Data from server 1 for example.txt_chunk_0: text1
-Data from server 0 for example.txt_chunk_1: text2
-Data from server 1 for example.txt_chunk_1: text2
-Data from server 0 for example.txt_chunk_2: text3
-Data from server 1 for example.txt_chunk_2: text3
-Data from server 0 for example.txt_chunk_3: text4
-Data from server 1 for example.txt_chunk_3: text4
-Data from server 0 for example.txt_chunk_4: text5
-Data from server 1 for example.txt_chunk_4: text5
+Chunk example.txt_chunk_5 stored on server 0
+Chunk example.txt_chunk_5 stored on server 1
+Chunk example.txt_chunk_6 stored on server 0
+Chunk example.txt_chunk_6 stored on server 1
+Chunk example.txt_chunk_7 stored on server 0
+Chunk example.txt_chunk_7 stored on server 1
+Chunk example.txt_chunk_8 stored on server 0
+Chunk example.txt_chunk_8 stored on server 1
+Data from server 0 for example.txt_chunk_0: Project content
+Data from server 1 for example.txt_chunk_0: Project content
+Data from server 0 for example.txt_chunk_1: Introduction
+Data from server 1 for example.txt_chunk_1: Introduction
+Data from server 0 for example.txt_chunk_2: Background and history
+Data from server 1 for example.txt_chunk_2: Background and history
+Data from server 0 for example.txt_chunk_3: Why we need Google file system?
+Data from server 1 for example.txt_chunk_3: Why we need Google file system?
+Data from server 0 for example.txt_chunk_4: Technology background
+Data from server 1 for example.txt_chunk_4: Technology background
+Data from server 0 for example.txt_chunk_5: Design Structure, Benefits, and Components
+Data from server 1 for example.txt_chunk_5: Design Structure, Benefits, and Components
+Data from server 0 for example.txt_chunk_6: Code demo
+Data from server 1 for example.txt_chunk_6: Code demo
+Data from server 0 for example.txt_chunk_7: Current Usage and The Transition to Colossus
+Data from server 1 for example.txt_chunk_7: Current Usage and The Transition to Colossus
+Data from server 0 for example.txt_chunk_8: Conclusion
+Data from server 1 for example.txt_chunk_8: Conclusion
 ```
